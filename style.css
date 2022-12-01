@@ -1,0 +1,314 @@
+body{
+    background: -webkit-linear-gradient(#b0e0e6, #e0ffff, #fffff0 );
+    margin: 0 auto;
+    padding: 0; 
+    font-family: sans-serif;
+}
+
+.img-banner{
+    width: 100%;
+    height: 560px;
+}
+
+.img-logo{
+    width: 120px;
+    height: 120px;
+    margin-left: 750px;
+}
+
+.section1{
+    padding-top: 1px;
+    background-color: white;
+    text-align: center;
+    width: 300px;
+    height: 250px;
+    font-family: sans-serif;
+    box-shadow: 3px 3px 18px 3px rgba(148, 148, 148, 0.452);
+    margin: 6px 6px 6px 6px;
+    border-radius: 5px;
+}
+
+.section2{
+    padding-top: 1px;
+    background-color: white;
+    text-align: center;
+    width: 1455px;
+    margin-left: 175px;
+    height: 680px;
+    font-family: sans-serif;
+    box-shadow: 3px 3px 18px 5px rgba(148, 148, 148, 0.452);
+    border-radius: 5px;
+}
+
+.section3{
+    margin-left: 15px;
+    padding-left: 54px;
+    padding-right: 40px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+	height: 300px;
+	width: 223px;
+    border-left: solid 1px  rgba(218, 218, 218, 0.856);
+    border-right: solid 1px rgba(218, 218, 218, 0.856);
+    border-bottom: solid 1px rgba(218, 218, 218, 0.856);
+    border-top: solid 1px rgba(218, 218, 218, 0.856);
+}
+
+.section3:hover{
+    transform: scale(1.2);
+    background-color: white;
+}
+
+section img{
+    margin-top: 10px;
+    width: 120px;
+    height: 120px;
+}
+
+.table1{
+    height: 350px;
+    margin-left: 100px;
+}
+
+.button1{
+    background-color: #b0e0e6;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.button1:hover{
+    transition: .5s;
+    background-color: rgba(1, 1, 199, 0.356);
+    color: white;
+}
+
+footer{
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+}
+
+footer img{
+    width: 100px;
+    height: 100px;
+    margin-left: 800px;
+}
+
+
+/*-------------Carrossel--------------*/
+
+.link-plain,
+	.link-plain:hover,
+	.link-plain:active,
+	.link-plain:visited {
+		text-decoration: none;
+	}
+
+	.link-plain-f,
+	.link-plain-f:hover,
+	.link-plain-f:active,
+	.link-plain-f:focus,
+	.link-plain-f:visited {
+		color: initial;
+		text-decoration: none !important;
+	}
+
+	.div-center {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+        margin-bottom: 20px;
+        font-family: sans-serif;
+	}
+	#va_container {
+		position: relative;
+		max-width: 1250px;
+		margin: auto;
+	}
+
+	.va-thumbnail {
+		border-radius: 5px;
+		border: 0px;
+		max-width: 100%;
+	}
+
+	.va-title {
+		margin-top: 0px;
+		margin-bottom: 10px;
+		font-weight: 700;
+        text-align: center;
+	}
+
+	.va-carrousel-flexbox {
+
+		display: flex;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		scrollbar-width: none;
+	}
+
+	.va-carrousel-flexbox .va-card {
+		flex: 0 0 auto;
+		padding-left: 15px;
+	}
+
+	.va-carrousel-flexbox .va-card:last-child {
+		margin-right: 20px;
+	}
+
+	.va-carrousel-flexbox .va-card:last-child::after {
+		content: ' ';
+		display: inline-block;
+	}
+
+	.va-card {
+		width: 100px;
+        height: 285px;
+		cursor: pointer;
+		user-select: none;
+		outline: none;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        margin-left: 10px;
+	}
+
+	.va-card:hover {
+		user-select: none;
+		outline: none;
+	}
+
+	.va-card a {
+		display: block;
+	}
+
+	@media (min-width: 768px) {
+		.va-card {
+			width: 230px;
+		}
+	}
+
+	.va-carrousel,
+	.va-carrousel-flexbox {
+		width: 100%;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.va-carrousel::-webkit-scrollbar,
+	.va-carrousel-flexbox::-webkit-scrollbar {
+		display: none;
+	}
+
+	.va-carrousel-title {
+		display: inline-block;
+
+		color: rgb(10, 10, 10);
+		font-weight: 700;
+		padding-bottom: 8px;
+		margin-bottom: 18px;
+	}
+
+	.va-title {
+		margin-top: 8px;
+		font-size: 11px;
+		max-height: 3em;
+		overflow: hidden;
+		color: rgb(10, 10, 10);
+		font-weight: 700;
+	}
+
+	@media (min-width: 768px) {
+		.va-title {
+			font-size: 20px;
+		}
+	}
+
+	.va-start-from {
+		font-size: 12px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		color: white;
+	}
+
+	.deals-paddle { 
+		height: 40px;
+		width: 40px;
+		color: white;
+		background-color: #00000089;
+		border-radius: 50%;
+		border: 0px solid;
+		margin: auto;
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	 	cursor:pointer;
+	}
+
+	.deals-paddle:focus {
+		outline: none;
+	}
+
+	.deals-paddle:active {
+		border-style: solid;
+		outline: none;
+		user-select: none;
+	}
+
+	.deals-paddle svg {
+		width: 10px;
+	}
+
+	@media (min-width: 768px) {
+		.other-game-button {
+			width: 300px;
+		}
+	}
+
+	.deals-scroll-left {
+		top: 0;
+		left: -70px;
+		bottom: 0;
+	}
+
+	.deals-scroll-right {
+		top: 0;
+		bottom: 0;
+		right: -70px;
+	}
+
+	.va-carrousel-section {
+		font-family: "Roboto";
+		padding: 0px;
+		position: relative;
+	}
+
+	@media (min-width: 768px) {
+
+		.va-carrousel-section {
+			padding-left:15px;
+			padding-right: 15px;
+		}
+	}
+
+	.va-whitewrap {
+        /*background-color: white;*/
+		padding-top: 15px;
+		margin-top: 15px;
+	}
+
+	.va-seeall {
+		display: block;
+		font-size: 18px;
+		font-weight: 700;
+		border-top: 1px solid #DDDDDD;
+		text-align: center;
+		padding: 10px;
+	}

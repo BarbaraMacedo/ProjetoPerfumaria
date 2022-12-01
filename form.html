@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<header>
+    <table>
+        <td><img class="img-logo" src="img/BM - png.png" alt=""></td>
+        <td><h3>BM Perfumes</h3></td>
+    </table>
+</header>
+<body>
+    <table class="table1">
+        <td>
+    <div class="div2">
+    <img class="img1" src="img/liz.webp" alt="">
+    <center><p><b>Liz</b></p>
+    <br>
+    <p class="p2">Liz, uma fragrância feminina intensa e marcante, traduz o poder das madeiras combinado à delicadeza e sensualidade de um floral arrebatador. </p><br>
+    <p class="p1"><b>R$ 179,90</b></p>
+    </center>
+    </div>
+    </td>
+    <td>
+    <div class="content">
+        <h1>Realização da compra</h1>
+        <br>
+        <form id="form">
+               
+            <div class="div3">
+                <p class="p3">Nome</p>
+                <input type="text" class="inputs required" oninput="nameValidate()">
+                <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+            </div>
+                
+            <div class="div3">
+                <p class="p3">CPF</p>
+                <input type="number"  class="inputs required" oninput="cpfValidate()">
+                <span class="span-required">CPF deve ter no minímo 11 caracteres</span>
+            </div>
+               
+            <div class="div3">
+                <p class="p3">Endereço</p>
+                <input type="text" class="inputs required" oninput="endValidate()">
+                <span class="span-required">Campo obrigatório</span>
+            </div>
+
+            <div class="div3">
+                <p class="p3">Frete</p>
+                <select>
+                    <option>Escolha</option>
+                    <option>Entrega rápida</option>
+                    <option>Normal</option>
+                </select>
+            </div>
+
+            <div class="div3">
+                <p class="p3">Forma de pagamento</p>
+                <select>
+                    <option>Escolha</option>
+                    <option>Pix</option>
+                    <option>Cartão de débito</option>
+                    <option>Cartão de crédito</option>
+                    <option>Boleto</option>
+                </select>
+            </div>
+            <button type="submit" onclick="compra()">Comprar</button>
+        </form>
+    </td>
+    </table>
+    </div>
+    <footer>
+        <table>
+            <tr><td><img src="img/BM - png.png" alt=""></td></tr>
+            <tr><td>© Todos dos direitos reservados</td></tr>
+        </table>
+        <br>
+    </footer>
+    <script src="form.js"></script>
+</body>
+</html>
